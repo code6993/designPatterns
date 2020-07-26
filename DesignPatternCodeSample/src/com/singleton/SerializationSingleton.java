@@ -17,9 +17,9 @@ public class SerializationSingleton implements Serializable{
 	}
 
 	
-//	public SerializationSingleton getInstance() {
-//		return SerializationSingletonHelper.sObj;
-//	}
+	public static SerializationSingleton getInstance() {
+		return SerializationSingletonHelper.sObj;
+	}
 	
 	/*
 	 * In order to prevent creation of new object at time of Deserialization, 
