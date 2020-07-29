@@ -1,7 +1,7 @@
 package com.singleton;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class SingletonPatternCache implements SingletonCache {
 
@@ -10,7 +10,7 @@ public class SingletonPatternCache implements SingletonCache {
 	}
 	
 	private static class SingletonPatternCacheHelper {
-		private static Map<Object,Object> sObj = new HashMap<Object,Object>();
+		private static Map<Object,Object> sObj = new ConcurrentHashMap<Object,Object>();
 	}
 	
 	@Override
