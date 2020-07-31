@@ -22,6 +22,14 @@ public class SingletonTesting {
 		        //deserailize from file to object
 		        ObjectInput in = new ObjectInputStream(new FileInputStream(
 		                "filename.ser"));
+		        
+		        Boolean f = false;
+		        if(Boolean.TRUE.equals(f)) {
+		        	System.out.println("kjdhsalkshal");
+		        }
+		        else {
+		        	System.out.println("bgrekljref");
+		        }
 		        SerializationSingleton instanceTwo = (SerializationSingleton) in.readObject();
 		        in.close();
 		        System.out.println("instanceOne hashCode="+instanceOne.hashCode());
