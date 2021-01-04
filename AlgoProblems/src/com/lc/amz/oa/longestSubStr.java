@@ -8,11 +8,7 @@ public class longestSubStr {
 	}
 	
 	public String longsetSubStrSoln(String s) {
-		char[] sCharVal = s.toCharArray();
-		int low=0;
-		int k=1;
-		
-		
+		return null;
 		
 	}
 
