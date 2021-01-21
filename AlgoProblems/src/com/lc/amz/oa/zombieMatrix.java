@@ -15,28 +15,17 @@ public class zombieMatrix {
 
 	}
 	
-	public int zombieMatrixSolution(int [][] arr) {
-		int totalNo = arr[0].length*arr.length;
-		Queue<int[]> q = new LinkedList<int[]>();
-		int cnt=0;int res=0;
-		for(int i=0;i<arr.length;i++) {
-			for(int j=0;j<arr[i].length;j++) {
-				if(arr[i][j]==1) {
-					q.offer(new int [] {i,j});
-					cnt++;
-				}
-			}
-		}
-		int[][] directons = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-		while(!q.isEmpty()) {
-			
-			int size = q.size();
-			if(cnt==totalNo) {
-				return res;
-			}
-			
-			
-		}
-	}
-
+	/*
+	 * public int zombieMatrixSolution(int [][] arr) { int totalNo =
+	 * arr[0].length*arr.length; Queue<int[]> q = new LinkedList<int[]>(); int
+	 * cnt=0;int res=0; for(int i=0;i<arr.length;i++) { for(int
+	 * j=0;j<arr[i].length;j++) { if(arr[i][j]==1) { q.offer(new int [] {i,j});
+	 * cnt++; } } } int[][] directons = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+	 * while(!q.isEmpty()) {
+	 * 
+	 * int size = q.size(); if(cnt==totalNo) { return res; }
+	 * 
+	 * 
+	 * } }
+	 */
 }
